@@ -1,0 +1,75 @@
+<html>
+<title>Nifty Twice Parfume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<body background="css/nifty.png">
+<div class="w3-bar w3-brown">
+ <button class="w3-bar-item w3-button" onclick="openKota('profile')">Profile</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('about')">Home</button>
+ <div class="w3-dropdown-hover">
+		<button class="w3-button">Variant</button>
+			<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="openKota('male')">Male</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('female')">Female</button>
+				<button class="w3-bar-item w3-button" onclick="openKota('unisex')">Unisex</button>
+			</div>
+	</div>
+ <button class="w3-bar-item w3-button" onclick="openKota('store')">Store</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('contact')">other</button>
+</div>
+
+<div id="profile" class="w3-container kota w3-animate-zoom w3-center"" style="display:none">
+ <h2 align="center"><font face="Courier New" color="white" size="7">Profile</h2>
+	<img src="css/profile.jpg" height="60%" width="30%">
+	<center>
+	<p align="center" font face="Courier New" color="white" size="1">Nama	: Fathya Nurulhasanah</P>
+	<p align="center" font face="Courier New" color="white" size="1">NIM		: 10123190</P>
+	<P align="center" font face="Courier New" color="white" size="1">Kelas	: IF-5</P>
+	
+</div>
+<div id="about" class="w3-container kota w3-animate-bottom w3-center"" style="display:none">
+ <h2 align="center"><font face="Courier New" color="white" size="7">About</h2>
+	<img src="css/nifty2.jpg" height="40%" width="30%">
+	<p font face="Courier New" color="white" size="3"> A fusion of Nature and Science</p>
+	<p align="center"><font face="Courier New" color="white" size="3">If you’re looking for a perfume that is uniquely designed to stand out, look no further than Nifty Twice. Our perfumes are naturally designed to make a statement and leave a lasting impression.
+	<P align="center"><font face="Courier New" color="white" size="3">We use high-quality ingredients to create our perfumes, which are carefully blended to ensure they last longer on your skin. We believe that a great perfume should be something that makes you feel confident and attractive throughout the day.</P>
+</div>
+<div id="male" class="w3-container kota w3-animate-opacity w3-center"" style="display:none">
+ <h2 align="center"><font face="Courier New" color="white" size="7">Male</h2>
+ <img src="css/men1.jpg" height="60%" width="30%">
+</div>
+<div id="female" class="w3-container kota w3-fading w3-center"" style="display:none">
+ <h2 align="center"><font face="Courier New" color="white" size="7">Female</h2>
+ <img src="css/women1.jpg" height="60%" width="30%">
+</div>
+<div id="unisex" class="w3-container kota w3-animate-right w3-center""style="display:none">
+ <h2 align="center"><font face="Courier New" color="white" size="7">Unisex</h2>
+ <img src="css/unisex.jpg" height="60%" width="30%">
+</div>
+<div id="store" class="w3-container kota w3-animate-zoom w3-center"" style="display:none">
+ <h2 align="center"><font face="Courier New" color="white" size="7">STORE</h2>
+ <img src="css/store.jpg"><p>
+ <a href=https://maps.app.goo.gl/Dw7Vaq1xqN4fak6H7>Klik Disini</a></P>
+</div>
+<div id="contact" class="w3-container kota w3-animate-left w3-center"" style="display:none">
+ <h2 align="center"><font face="Courier New" color="white" size="7">visit us</h2>
+ <img src="css/ig.png" height="20%" width="10%">
+ <p><a href=https://www.instagram.com/niftytwice/>instagram</a></P>
+ 
+</div>
+
+
+
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none"; 
+ }
+ document.getElementById(namakota).style.display = "block"; 
+}
+</script>
+</body>
+</html>
